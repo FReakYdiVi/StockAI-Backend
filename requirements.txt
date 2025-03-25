@@ -34,7 +34,7 @@ exceptiongroup
 executing
 fastapi
 fastjsonschema
-feedparser
+feedparser==6.0.10
 filelock
 firecrawl-py
 flatbuffers
