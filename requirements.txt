@@ -34,7 +34,7 @@ exceptiongroup
 executing
 fastapi
 fastjsonschema
-feedparser==5.2.1
+feedparser
 filelock
 firecrawl-py
 flatbuffers
@@ -136,7 +136,7 @@ pydantic
 pydantic-settings
 pydantic_core
 Pygments
-pygooglenews
+# pygooglenews
 pyparsing
 PyPika
 pyproject_hooks
@@ -159,7 +159,7 @@ scipy
 seaborn
 sec-api
 sentence-transformers
-setuptools==58
+setuptools
 sgmllib3k
 shellingham
 six
