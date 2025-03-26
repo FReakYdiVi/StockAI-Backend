@@ -135,7 +135,7 @@ pydantic
 pydantic-settings
 pydantic_core
 Pygments
-# pygooglenews
+pygooglenews
 pyparsing
 PyPika
 pyproject_hooks
