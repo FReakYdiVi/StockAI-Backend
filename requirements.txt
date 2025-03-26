@@ -158,7 +158,7 @@ scipy
 seaborn
 sec-api
 sentence-transformers
-setuptools
+setuptools==57
 sgmllib3k
 shellingham
 six
