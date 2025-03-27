@@ -9,7 +9,7 @@ app = FastAPI()
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://stock-ai-frontend.vercel.app"],  # Allow frontend URL
+    allow_origins=["*"],  # Allow frontend URL
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
