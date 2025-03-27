@@ -33,6 +33,7 @@ durationpy
 exceptiongroup
 executing
 fastapi
+feedparser
 fastjsonschema
 filelock
 firecrawl-py
