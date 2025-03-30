@@ -11,7 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://stock-ai-frontend-dsz5.vercel.app"],  # Allow frontend URL
     allow_credentials=True,
-    allow_methods=["GET","POST","PUT","DELETE"],  # Allow all HTTP methods
+    allow_methods=["POST"],  # Allow all HTTP methods
     allow_headers=["Content-type"],  # Allow all headers
 )
 
