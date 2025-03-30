@@ -10,10 +10,10 @@ app = FastAPI()
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Allow frontend URL
+    allow_origins=["https://stockai-backend-1.onrender.com/analyze_stock"],  # Allow frontend URL
     allow_credentials=True,
-    allow_methods=["POST"],  # Allow all HTTP methods
-    allow_headers=["Content-type"],  # Allow all headers
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
 )
 
 # Define a request model
@@ -35,7 +35,3 @@ def root():
     return {"message": "Stock Analysis API is running!"}
 
 
-if __name__ == "__main__":
-    import uvicorn
-    PORT = int(os.getenv("PORT", 10000))
-    uvicorn.run(app, host="0.0.0.0", port=PORT)
