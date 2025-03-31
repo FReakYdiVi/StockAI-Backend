@@ -7,10 +7,14 @@ import os
 # Initialize FastAPI app
 app = FastAPI()
 
+
+origins=["stock-ai-frontend-q528u83q7-divyanshs-projects-b99a3826.vercel.app"
+         ,"stock-ai-frontend.vercel.app",
+        "http://localhost:5173"]
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://stockai-backend-1.onrender.com/analyze_stock"],  # Allow frontend URL
+    allow_origins=origins,  # Allow frontend URL
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
