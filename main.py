@@ -8,15 +8,15 @@ import os
 app = FastAPI()
 
 
-origins=["https://stock-ai-frontend-git-main-divyanshs-projects-b99a3826.vercel.app/"
+origins=["https://stock-ai-frontend-git-main-divyanshs-projects-b99a3826.vercel.app"
          ,"https://stock-ai-frontend.vercel.app",
          "http://stock-ai-frontend.vercel.app",
         "http://localhost:5173"]
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Allow frontend URL
-    allow_credentials=False,
+    allow_origins=["*"],  # Allow frontend URL
+    allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
